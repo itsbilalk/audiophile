@@ -33,7 +33,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #191919;
   color: var(--foreground);
   font-family: "Manrope", "Arial", "sans-serif";
   line-height: 1.75rem;
