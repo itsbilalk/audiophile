@@ -49,7 +49,7 @@ body {
 }
 
 .h3 {
-  @apply font-bold text-[2rem] tracking-[0.072em] uppercase;
+  @apply font-bold text-[2.25rem] tracking-[0.072em] leading-10 uppercase;
 }
 
 .h4 {
