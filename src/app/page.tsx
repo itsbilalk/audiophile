@@ -1,12 +1,14 @@
 import Header from "@/components/Header/Header";
 
+import { Categories } from "@/components/Categories/Categories";
+
 export default function Home() {
   return (
     <>
       <div className="min-h-screen md:w-full text-[var(--colour-white)]">
         <div className=" flex flex-col bg-contain bg-no-repeat bg-[url(../../public/home/mobile/image-header.jpg)] md:bg-[url(../../public/home/tablet/image-header.jpg)]  xl:bg-[url(../../public/home/desktop/image-hero.jpg)] min-h-[550px]  bg-center">
           <Header />
-          <div className="flex flex-col w-94.5 justify-center items-center m-auto text-center xl:ml-[23%] ">
+          <div className="flex flex-col md:w-94.5 justify-center items-center m-auto text-center xl:ml-[23%] ">
             <p className="tracking-[0.625em] uppercase text-[#ffffff80] text-[0.875rem]">
               new product
             </p>
@@ -21,6 +23,9 @@ export default function Home() {
               see product
             </button>
           </div>
+        </div>
+        <div className="flex  justify-center bg-[var(--colour-white)] align-middle">
+          <Categories />
         </div>
       </div>
     </>
