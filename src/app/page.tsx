@@ -28,18 +28,20 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center bg-[var(--colour-white)] align-middle ">
           <Categories />
-          <div className="bg-[var(--colour-dark-orange)]  bg-[50%_-7.125rem] bg-cover ml-6 mr-6 bg-[url(../../public/home/desktop/pattern-circles.svg)] bg-no-repeat text-center">
+          <div className="bg-[var(--colour-dark-orange)]  bg-[50%_-8.125rem] bg-cover ml-6 mr-6 bg-[url(../../public/home/desktop/pattern-circles.svg)] bg-no-repeat text-center rounded-lg">
             <Image
               src={speaker}
               alt="image of the zx9 speaker"
               className="h-52 w-43 ml-auto mr-auto mt-13.5"
             />
-            <h2 className="h3 uppercase mt-8 ml-6 mr-6">zx9 speaker</h2>
-            <p className="mt-8">
+            <h2 className="h3 uppercase mt-8 ml-15 mr-15">zx9 speaker</h2>
+            <p className="mt-8 opacity-75 leading-6  ml-6 mr-6">
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </p>
-            <button className="mb-13.5 mt-6">See product</button>
+            <button className="uppercase tracking-[0.072em] font-bold  mb-13.5 mt-6 bg-black w-40 h-12">
+              See product
+            </button>
           </div>
 
           <Categories />
