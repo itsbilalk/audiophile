@@ -17,13 +17,13 @@ export const Categories = () => {
       {categories.map(
         (eachCategory: { title: string; path: StaticImageData }) => (
           <div
-            className="bg-[var(--colour-dark-grey)] border-r-2  ml-6 mr-6 mb-12 self flex-col text-center pb-5.5 md:w-2xl md:mt-24 md:mb-24"
+            className="bg-[var(--colour-dark-grey)] border-r-2  ml-6 mr-6 mb-12 self flex-col text-center pb-5.5 md:w-2xl md:mt-24 md:mb-24 xl:max-w-88 "
             key={eachCategory.title}
           >
             <Image
               src={eachCategory.path}
               alt={`${eachCategory.title} category picture`}
-              className="w-29 h-26 ml-auto mr-auto relative top-[-2rem]"
+              className="w-29 h-26 xl:w-30 xl:h-30 ml-auto mr-auto relative top-[-2rem]"
             />
             <p className="uppercase font-bold leading-1.5 text-black text-[1rem] tracking-[0.067em]">
               {eachCategory.title}
