@@ -17,7 +17,7 @@ export const Categories = () => {
       {categories.map(
         (eachCategory: { title: string; path: StaticImageData }) => (
           <div
-            className="bg-[var(--colour-dark-grey)] border-r-2  ml-6 mr-6 mb-12 self flex-col text-center pb-5.5   md:mt-24 md:mb-24 lg:w-full "
+            className="bg-[var(--colour-dark-grey)] border-r-2 ml-6 mr-6 mb-12 self flex-col text-center pb-5.5   md:mt-24 md:mb-24 md:w-full "
             key={eachCategory.title}
           >
             <Image
