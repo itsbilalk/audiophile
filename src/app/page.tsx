@@ -89,7 +89,7 @@ export default function Home() {
                 width={540}
                 height={320}
               />
-              <div className="bg-[var(--colour-dark-grey)] text-black flex flex-col md:w-full">
+              <div className="bg-[var(--colour-dark-grey)] text-black flex flex-col md:w-full rounded-lg">
                 <h1 className="uppercase tracking-[0.072em] text-[1.75rem] font-bold  ml-6 md:ml-15.5 mt-11 md:mt-auto">
                   yx1 earphones
                 </h1>
