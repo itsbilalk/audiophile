@@ -5,6 +5,10 @@ import Image from "next/image";
 import speakerIconForMobile from "../../public/home/mobile/image-speaker-zx9.png";
 import speakerIconForDesktop from "../../public/home/desktop/image-speaker-zx9.png";
 
+import earphonesYx1Mobile from "../../public/home/mobile/image-earphones-yx1.jpg";
+import earphonesYx1Tablet from "../../public/home/tablet/image-earphones-yx1.jpg";
+import earphonesYx1Desktop from "../../public/home/desktop/image-earphones-yx1.jpg";
+
 export default function Home() {
   return (
     <>
@@ -52,6 +56,44 @@ export default function Home() {
                 <button className="uppercase tracking-[0.072em] font-bold  mb-13.5 mt-6 bg-black w-40 h-12 self-center">
                   See product
                 </button>
+              </div>
+            </div>
+
+            <div className="flex flex-col  ml-6 mr-6 xl:mx-0 mt-6 text-black text-start justify-center bg-cover bg-[90%] bg-no-repeat bg-[url(../../public/home/mobile/image-speaker-zx7.jpg)] md:bg-[url(../../public/home/tablet/image-speaker-zx7.jpg)] lg:bg-[url(../../public/home/desktop/image-speaker-zx7.jpg)] min-h-[300px] rounded-lg">
+              <h1 className="uppercase tracking-[0.072em] text-[1.75rem] font-bold  ml-6 md:ml-15.5">
+                zx7 speaker
+              </h1>
+
+              <button className="button">see product</button>
+            </div>
+
+            <div className="flex flex-col my-6 mx-6 md:flex-row gap-6 lg:ml-0 lg:mr-0">
+              <Image
+                src={earphonesYx1Mobile}
+                alt="earphones yx1"
+                className="md:hidden rounded-lg"
+                width={327}
+                height={200}
+              />
+              <Image
+                src={earphonesYx1Tablet}
+                alt="earphones yx1"
+                className="hidden md:block lg:hidden rounded-lg"
+                width={339}
+                height={320}
+              />
+              <Image
+                src={earphonesYx1Desktop}
+                alt="earphones yx1"
+                className="hidden lg:block rounded-lg w-[540px] h-[320px]"
+                width={540}
+                height={320}
+              />
+              <div className="bg-[var(--colour-dark-grey)] text-black flex flex-col md:w-full">
+                <h1 className="uppercase tracking-[0.072em] text-[1.75rem] font-bold  ml-6 md:ml-15.5 mt-11 md:mt-auto">
+                  yx1 earphones
+                </h1>
+                <button className="button mb-11 md:mb-auto">see product</button>
               </div>
             </div>
 

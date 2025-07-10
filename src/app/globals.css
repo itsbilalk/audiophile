@@ -67,3 +67,7 @@ body {
 .subtitle {
   @apply font-bold text-[0.813rem] tracking-[0.063em] uppercase;
 }
+
+.button {
+  @apply mr-auto ml-6 md:ml-15.5 uppercase font-bold tracking-[0.063em]  py-4 px-7.5 mt-8 border-2 border-black hover:bg-black hover:text-white hover:cursor-pointer;
+}
