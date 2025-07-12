@@ -9,10 +9,14 @@ import earphonesYx1Mobile from "../../public/home/mobile/image-earphones-yx1.jpg
 import earphonesYx1Tablet from "../../public/home/tablet/image-earphones-yx1.jpg";
 import earphonesYx1Desktop from "../../public/home/desktop/image-earphones-yx1.jpg";
 
+import bestGearMobileImage from "../../public/shared/mobile/image-best-gear.jpg";
+import bestGearTabletImaget from "../../public/shared/tablet/image-best-gear.jpg";
+import bestGearDesktopImage from "../../public/shared/desktop/image-best-gear.jpg";
+
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen md:w-full text-[var(--colour-white)]">
+      <div className="min-h-screen md:w-full text-[var(--colour-white)] ">
         <div className=" flex flex-col bg-contain bg-no-repeat bg-[url(../../public/home/mobile/image-header.jpg)] md:bg-[url(../../public/home/tablet/image-header.jpg)]  lg:bg-[url(../../public/home/desktop/image-hero.jpg)] min-h-[550px] xl:min-h-[700px] bg-center">
           <Header />
           <div className="flex flex-col md:w-94.5 justify-center items-center xl:items-start m-auto text-center lg:ml-8 xl:ml-[23%] ">
@@ -32,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col justify-center bg-[var(--colour-white)] align-middle ">
-          <div className="ml-2 mr-2 xl:ml-auto xl:mr-auto">
+          <div className="ml-2 mr-2 xl:ml-auto xl:w-[55%] xl:mr-auto">
             <Categories />
             <div className=" flex flex-col xl:ml-auto xl:mr-auto lg:flex-row bg-[var(--colour-dark-orange)]  bg-[50%_-9rem] bg-size-[auto_600px]  md:bg-[50%_-18.125rem] md:bg-size-[auto_900px] lg:bg-[-10.5rem_-2rem] lg:bg-size-[auto_980px] ml-6 mr-6 bg-[url(../../public/home/desktop/pattern-circles.svg)] bg-no-repeat text-center lg:text-start rounded-lg lg:overflow-hidden">
               <Image
@@ -67,12 +71,12 @@ export default function Home() {
               <button className="button">see product</button>
             </div>
 
-            <div className="flex flex-col my-6 mx-6 md:flex-row gap-6 lg:ml-0 lg:mr-0">
+            <div className="flex flex-col my-6 mx-6 md:flex-row gap-6  xl:mx-0">
               <Image
                 src={earphonesYx1Mobile}
                 alt="earphones yx1"
                 className="md:hidden rounded-lg"
-                width={327}
+                width={350}
                 height={200}
               />
               <Image
@@ -89,14 +93,51 @@ export default function Home() {
                 width={540}
                 height={320}
               />
-              <div className="bg-[var(--colour-dark-grey)] text-black flex flex-col md:w-full rounded-lg">
+              <div className=" bg-[var(--colour-dark-grey)] text-black flex flex-col md:w-full rounded-lg">
                 <h1 className="uppercase tracking-[0.072em] text-[1.75rem] font-bold  ml-6 md:ml-15.5 mt-11 md:mt-auto">
                   yx1 earphones
                 </h1>
                 <button className="button mb-11 md:mb-auto">see product</button>
               </div>
             </div>
-
+            <div className="flex flex-col lg:flex-row-reverse mx-6 xl:mx-0  text-black mt-30">
+              <Image
+                src={bestGearMobileImage}
+                alt="best gear image"
+                className="md:hidden rounded-lg"
+                height={300}
+                width={350}
+              />
+              <Image
+                src={bestGearTabletImaget}
+                alt="best gear image"
+                className="hidden md:block lg:hidden  rounded-lg"
+              />
+              <Image
+                src={bestGearDesktopImage}
+                alt="best gear image"
+                width={540}
+                height={588}
+                className="hidden lg:block  rounded-lg lg:h-[588px] lg:w-[540px]"
+              />
+              <div className="justify-center my-auto">
+                <h1 className="uppercase tracking-[0.036em] text-[1.75rem] lg:text-[2.5rem] md:text-[2.75rem] leading-10 font-bold mt-10 text-center lg:text-start lg:ml-auto">
+                  bringing you the{" "}
+                  <span className="text-[var(--colour-dark-orange)]">best</span>{" "}
+                  <br className="hidden md:block lg:hidden" />
+                  audio gear
+                </h1>
+                <p className="text-center mt-8 opacity-50 font-medium leading-6 md:mx-22 lg:text-start lg:mr-9 lg:ml-0 xl:mr-10">
+                  Located at the heart of New York City, Audiophile is the
+                  premier store for high end headphones, earphones, speakers,
+                  and audio accessories. We have a large showroom and luxury
+                  demonstration rooms available for you to browse and experience
+                  a wide range of our products. Stop by our store to meet some
+                  of the fantastic people who make Audiophile the best place to
+                  buy your portable audio equipment.
+                </p>
+              </div>
+            </div>
             <Categories />
           </div>
         </div>
