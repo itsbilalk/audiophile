@@ -22,6 +22,7 @@
   --colour-white: #ffffff;
   --colour-dark-grey: #f1f1f1;
   --colour-light-grey: #fafafa;
+  --color-light-black: #4c4c4c;
   --colour-grey: rgba(255, 255, 255, 0.1);
 }
 
@@ -70,4 +71,12 @@ body {
 
 .button {
   @apply mr-auto ml-6 md:ml-15.5 uppercase font-bold tracking-[0.063em]  py-4 px-7.5 mt-8 border-2 border-black hover:bg-black hover:text-white hover:cursor-pointer;
+}
+
+.svg-color {
+  &:hover {
+    transition: filter 0.2s;
+    filter: invert(53%) sepia(18%) saturate(1574%) hue-rotate(338deg)
+      brightness(101%) contrast(83%);
+  }
 }

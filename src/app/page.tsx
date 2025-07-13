@@ -38,7 +38,7 @@ export default function Home() {
               Experience natural, life like audio and exceptional build quality
               made for the passionate music enthusiast.
             </p>
-            <button className="mt-7 uppercase w-40 h-10 bg-[var(--colour-dark-orange)] hover:bg-[var(--colour-light-orange)] cursor-pointer lg:mr-auto">
+            <button className="mt-7 uppercase w-40 h-10 bg-[var(--colour-dark-orange)] hover:bg-[var(--colour-light-orange)] cursor-pointer lg:mr-auto transition-colors">
               see product
             </button>
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
                   Upgrade to premium speakers that are <br /> phenomenally built
                   to deliver truly <br /> remarkable sound.
                 </p>
-                <button className="uppercase tracking-[0.072em] font-bold  mb-13.5 mt-6 bg-black w-40 h-12 self-center">
+                <button className="uppercase tracking-[0.072em] font-bold  mb-13.5 mt-6 bg-black w-40 h-12 self-center hover:bg-(--color-light-black) cursor-pointer transition-colors">
                   See product
                 </button>
               </div>
@@ -76,7 +76,7 @@ export default function Home() {
                 zx7 speaker
               </h1>
 
-              <button className="button">see product</button>
+              <button className="button transition-colors">see product</button>
             </div>
 
             <div className="flex flex-col my-6 mx-6 md:flex-row gap-6  xl:mx-0">
@@ -105,7 +105,9 @@ export default function Home() {
                 <h1 className="uppercase tracking-[0.072em] text-[1.75rem] font-bold  ml-6 md:ml-15.5 mt-11 md:mt-auto">
                   yx1 earphones
                 </h1>
-                <button className="button mb-11 md:mb-auto">see product</button>
+                <button className="button mb-11 md:mb-auto transition-colors">
+                  see product
+                </button>
               </div>
             </div>
             <div className="flex flex-col lg:flex-row-reverse mx-6 xl:mx-0  text-black my-30">
@@ -148,61 +150,78 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center align-middle text-center md:text-start md:mx-9.5">
-          <div className="mx-auto md:ml-0">
-            <div className="w-[101px] h-[4px] bg-[var(--colour-dark-orange)] mx-auto md:ml-0"></div>
-            <Image
-              src={logo}
-              alt="Audiophile logo"
-              width={143}
-              height={25}
-              className="my-12 md:mb-8 md:mt-14"
-            />
+        <div className="flex flex-col justify-center align-middle text-center md:text-start md:mx-9.5 xl:w-[55%] xl:mx-auto">
+          <div className="flex flex-col lg:flex-row">
+            <div className="mx-auto md:ml-0">
+              <div className="w-[101px] h-[4px] bg-[var(--colour-dark-orange)] mx-auto md:ml-0"></div>
+              <Image
+                src={logo}
+                alt="Audiophile logo"
+                width={143}
+                height={25}
+                className="my-12 md:mb-8 md:mt-14"
+              />
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8.5 tracking-[0.125em] text-[0.813rem] font-bold mb-12 md:mb-8 lg:mt-auto lg:ml-auto lg:mr-0">
+              <Link
+                href="/"
+                className="hover:text-[var(--colour-dark-orange)] transition-colors"
+              >
+                HOME
+              </Link>
+              <Link
+                href="/"
+                className="hover:text-[var(--colour-dark-orange)] transition-colors"
+              >
+                HEADPHONES
+              </Link>
+              <Link
+                href="/"
+                className="hover:text-[var(--colour-dark-orange)] transition-colors"
+              >
+                SPEAKERS
+              </Link>
+              <Link
+                href="/"
+                className="hover:text-[var(--colour-dark-orange)] transition-colors"
+              >
+                EARPHONES
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8.5 tracking-[0.125em] text-[0.813rem] lg:mr-auto font-bold mb-12 md:mb-8">
-            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
-              HOME
-            </Link>
-            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
-              HEADPHONES
-            </Link>
-            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
-              SPEAKERS
-            </Link>
-            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
-              EARPHONES
-            </Link>
-          </div>
-
-          <p className="opacity-50 font-medium leading-6  lg:text-start mx-6 mb-12 md:mx-0 md:mb-20">
+          <p className="opacity-50 font-medium leading-6  lg:text-start mx-6 mb-12 md:mx-0 md:mb-20 lg:max-w-[540px]">
             Audiophile is an all in one stop to fulfill your audio needs.
             We&apos;re a small team of music lovers and sound specialists who
             are devoted to helping you get the most out of personal audio. Come
             and visit our demo facility - we’re open 7 days a week.
           </p>
           <div className="flex flex-col md:flex-row h-fit">
-            <p className="opacity-50 font-medium leading-6  lg:text-start md:h-fit md:mb-auto">
+            <p className="opacity-50 font-medium leading-6  lg:text-start md:h-fit md:mb-12">
               Copyright 2025. All Rights Reserved
             </p>
-            <div className="flex gap-4 justify-center my-12 md:mt-0 md:ml-auto">
+            <div className="flex gap-4 justify-center mt-12 md:mt-0 md:ml-auto mb-12 md:mb-auto lg:top-[-6rem] lg:relative ">
               <Image
                 src={facebookIcon}
                 alt="Facebook icon for social media navigation"
                 width={24}
                 height={24}
+                className="cursor-pointer  svg-color"
               />
               <Image
                 src={twitterIcon}
                 alt="Twitter icon for social media navigation"
                 width={24}
                 height={24}
+                className="cursor-pointer  svg-color"
               />
               <Image
                 src={instagramIcon}
                 alt="Instagram icon for social media navigation"
                 width={24}
                 height={24}
+                className="cursor-pointer  svg-color"
               />
             </div>
           </div>

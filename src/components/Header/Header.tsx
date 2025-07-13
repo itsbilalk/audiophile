@@ -20,16 +20,28 @@ export default function Header() {
         className="h-fit self-center md:mr-auto md:ml-10.5 lg:ml-0 xl:ml-0"
       />
       <div className="hidden lg:flex flex-row gap-10 tracking-[0.125em] text-[0.813rem] lg:mr-auto">
-        <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+        <Link
+          href="/"
+          className="hover:text-[var(--colour-dark-orange)] transition-colors"
+        >
           HOME
         </Link>
-        <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+        <Link
+          href="/"
+          className="hover:text-[var(--colour-dark-orange)] transition-colors"
+        >
           HEADPHONES
         </Link>
-        <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+        <Link
+          href="/"
+          className="hover:text-[var(--colour-dark-orange)] transition-colors"
+        >
           SPEAKERS
         </Link>
-        <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+        <Link
+          href="/"
+          className="hover:text-[var(--colour-dark-orange)] transition-colors"
+        >
           EARPHONES
         </Link>
       </div>
