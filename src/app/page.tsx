@@ -13,10 +13,18 @@ import bestGearMobileImage from "../../public/shared/mobile/image-best-gear.jpg"
 import bestGearTabletImaget from "../../public/shared/tablet/image-best-gear.jpg";
 import bestGearDesktopImage from "../../public/shared/desktop/image-best-gear.jpg";
 
+import logo from "../../public/shared/desktop/logo.svg";
+
+import facebookIcon from "../../public/shared/desktop/icon-facebook.svg";
+import twitterIcon from "../../public/shared/desktop/icon-twitter.svg";
+import instagramIcon from "../../public/shared/desktop/icon-instagram.svg";
+
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen md:w-full text-[var(--colour-white)] ">
+      <div className="min-h-screen md:w-full text-[var(--colour-white)]">
         <div className=" flex flex-col bg-contain bg-no-repeat bg-[url(../../public/home/mobile/image-header.jpg)] md:bg-[url(../../public/home/tablet/image-header.jpg)]  lg:bg-[url(../../public/home/desktop/image-hero.jpg)] min-h-[550px] xl:min-h-[700px] bg-center">
           <Header />
           <div className="flex flex-col md:w-94.5 justify-center items-center xl:items-start m-auto text-center lg:ml-8 xl:ml-[23%] ">
@@ -100,7 +108,7 @@ export default function Home() {
                 <button className="button mb-11 md:mb-auto">see product</button>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row-reverse mx-6 xl:mx-0  text-black mt-30">
+            <div className="flex flex-col lg:flex-row-reverse mx-6 xl:mx-0  text-black my-30">
               <Image
                 src={bestGearMobileImage}
                 alt="best gear image"
@@ -138,7 +146,65 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <Categories />
+          </div>
+        </div>
+        <div className="flex flex-col justify-center align-middle text-center md:text-start md:mx-9.5">
+          <div className="mx-auto md:ml-0">
+            <div className="w-[101px] h-[4px] bg-[var(--colour-dark-orange)] mx-auto md:ml-0"></div>
+            <Image
+              src={logo}
+              alt="Audiophile logo"
+              width={143}
+              height={25}
+              className="my-12 md:mb-8 md:mt-14"
+            />
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8.5 tracking-[0.125em] text-[0.813rem] lg:mr-auto font-bold mb-12 md:mb-8">
+            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+              HOME
+            </Link>
+            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+              HEADPHONES
+            </Link>
+            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+              SPEAKERS
+            </Link>
+            <Link href="/" className="hover:text-[var(--colour-dark-orange)]">
+              EARPHONES
+            </Link>
+          </div>
+
+          <p className="opacity-50 font-medium leading-6  lg:text-start mx-6 mb-12 md:mx-0 md:mb-20">
+            Audiophile is an all in one stop to fulfill your audio needs.
+            We&apos;re a small team of music lovers and sound specialists who
+            are devoted to helping you get the most out of personal audio. Come
+            and visit our demo facility - we’re open 7 days a week.
+          </p>
+          <div className="flex flex-col md:flex-row h-fit">
+            <p className="opacity-50 font-medium leading-6  lg:text-start md:h-fit md:mb-auto">
+              Copyright 2025. All Rights Reserved
+            </p>
+            <div className="flex gap-4 justify-center my-12 md:mt-0 md:ml-auto">
+              <Image
+                src={facebookIcon}
+                alt="Facebook icon for social media navigation"
+                width={24}
+                height={24}
+              />
+              <Image
+                src={twitterIcon}
+                alt="Twitter icon for social media navigation"
+                width={24}
+                height={24}
+              />
+              <Image
+                src={instagramIcon}
+                alt="Instagram icon for social media navigation"
+                width={24}
+                height={24}
+              />
+            </div>
           </div>
         </div>
       </div>
